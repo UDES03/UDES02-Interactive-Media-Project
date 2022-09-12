@@ -1,0 +1,246 @@
+
+
+// Drawing persons (Rieke)
+ArrayList<Person> persons_entering = new ArrayList();
+ArrayList<Person> persons_level_0 = new ArrayList();
+ArrayList<Person> persons_level_1 = new ArrayList();
+
+// Variables for Stars in the Background
+float[] x = new float[100];
+float[] y = new float[100];
+float[] speed = new float[100];
+
+// Drawing Building  
+ float level_left_x=4;// building x Axis
+ float level_right_x=4;// building width size 
+ float level_0_y=12;// building height size
+ 
+ // Doors variables
+float  doors_floor0_yaxis=1.92;// Doors y axis for floor 0(ground floor)
+float doors_floor1_yaxis=2.30;// Doors y axis for floor 1(level 1 floor)
+float door_width=27; // Doors width
+float door_height=16;// Doors height
+float door_curve=7; // doors curve edges
+
+
+void setup()
+{
+  background(255);
+  size(1600, 900);
+  stroke(255);
+  strokeWeight(10);
+  //color build = color(200);
+ int i = 0;
+  while(i < 100) {  
+    x[i] = random(0, width);
+    y[i] = random(0, height);
+    speed[i] = random(1, 5);
+    i = i + 1;
+  }
+  building();// fuction to call Building floors 
+  doors_floor0();// function to call doors on ground FLoor
+  doors_floor1();// function to call doors on level 1
+  //loadData();// Functoin to load data (Rieke)
+}
+
+// Draw working with persons(Rieke)
+void draw() {
+  //Simple Star Code
+background(0);
+  //Stars in the backgroud in Draw
+  int i = 0;
+  while(i < 100) {
+    point(x[i], y[i]);
+  
+    x[i] = x[i] - speed[i];
+    if(x[i] < 0) {
+      x[i] = width;
+    }
+    i = i + 1;
+  }
+  
+  
+  
+  
+  
+  
+
+  // PERSON
+  // persons enter the building
+  for ( i = 0; i < persons_entering.size(); i++) {
+    person_enters(persons_entering.get(i));
+  }
+  
+  // persons change to level 1
+  for ( i = 0; i < persons_level_0.size(); i++) {
+    person_changes_level(persons_level_0.get(i), 1);
+  }
+  
+  // persons change to level 0
+  for ( i = 0; i < persons_level_1.size(); i++) {
+    person_changes_level(persons_level_1.get(i), 0);
+  }
+
+  // persons leave the building
+  for ( i = 0; i < 2; i++) {
+    if (persons_level_0.size() != 0) {
+      int random_person_id = (int) random(0, persons_level_0.size()-1);
+      person_leaves(persons_level_0.get(random_person_id), random_person_id);
+    }
+  }
+}
+
+void createPersons(int amount) {                // create an amount of persons
+  for (int i = 0; i < amount; i++) {
+    Person person = new Person();
+    persons_entering.add(person);
+  }
+}
+
+void person_enters(Person p) {
+  p.show();
+  if (p.entered()) {
+    persons_level_0.add(p);                    // add person to level 0 if it entered the building successfully
+  }
+}
+
+void person_leaves(Person p, int person_id) {
+  p.show();
+
+  if (p.left()) {                              // remove person from level 0 if it left the building successfully
+    persons_level_0.remove(person_id);
+  };
+}
+
+void person_changes_level(Person p, int new_level) {
+  int current_level = p.getLevel();
+
+  // add person to new level 
+  if (new_level == 0) {
+    persons_level_0.add(p);
+  } else if (new_level == 1) {
+    persons_level_1.add(p);
+  }
+
+  // remove person from current level 
+  if (current_level == 0) {
+    persons_level_0.remove(p);
+  } else if (current_level == 1) {
+    persons_level_1.remove(p);
+  }
+
+  if (p.changeLevel(new_level)) {
+    println("Person changed to " + new_level);
+  };
+}
+
+class Person {
+  float x, y;
+  float target_x, target_y_up, target_y_down;
+  int level;
+
+  Person() {
+    this.x = 10;
+    this.y = random(level_1_y, level_0_y);
+    this.level = 0;
+    this.target_x = random(level_left_x, level_right_x);
+    this.target_y_up = y - level_height;
+    this.target_y_down = y + level_height;
+  }
+
+  void show() {
+    fill(0);
+    circle(x, y, 20);
+  }
+
+  boolean entered() {                      // returns true, if person entered the building
+    if (x < target_x) {
+      x += 2;
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  boolean left() {                          // returns true, if person left the building
+    if (x < level_right_x + 100) {
+      x += 2;
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  boolean changeLevel(int newLevel) {      // returns true, if person changed level in the building
+    if (level < newLevel) {
+      if (y > target_y_up) {
+        y -= 2;
+        return false;
+      } else {
+        this.level = newLevel;
+        return true;
+      }
+    } else if (level > newLevel) {
+      if ( y < target_y_down) {
+        y += 2;
+        return false;
+      } else {
+        this.level = newLevel;
+        return true;
+      }
+    } else {
+      return true;
+    }
+  }
+
+  int getLevel() {
+    return level;
+  }
+}
+
+void building() /// Building Design/////////
+{
+
+
+  ///// Rectangle #1___floor 4////
+  //fill(build);
+  rect(width/level_left_x, height/6, width/level_right_x, height/level_0_y);
+
+  //// Rectangle #2 ____ floor 3//////
+  fill(0);
+  rect(width/level_left_x, height/4, width/level_right_x, height/level_0_y);
+
+  ////Rectangle  #3 _____ floor 2///////
+  fill(125);
+  rect(width/level_left_x, height/3, width/level_right_x, height/level_0_y);
+
+  //// Rectangle #4 ______ floor 1/////
+  fill(200);
+  rect(width/level_left_x, height/2.40, width/level_right_x, height/level_0_y);
+
+  /////Rectangle # 5 _____ floor 0/////
+  fill(50);
+  rect(width/level_left_x, height/2.0, width/level_right_x, height/level_0_y);
+}
+
+void doors_floor0()
+{
+  fill(255);
+  //////Door 1 on left ////
+  rect(width/4, height/doors_floor0_yaxis, width/door_width, height/door_height,door_curve);
+  //////Door in the middle  ////
+  rect(width/2.80, height/doors_floor0_yaxis, width/door_width, height/door_height, door_curve);
+  ///// Door 3 on the right////
+  rect(width/2.16, height/doors_floor0_yaxis, width/door_width, height/door_height, door_curve);
+}
+
+void doors_floor1()
+{
+  fill(255);
+  //////Door 1 on left ////
+  rect(width/3.30, height/doors_floor1_yaxis, width/door_width, height/door_height, door_curve);
+  
+  ///Door 2 on the right///
+  rect(width/2.50, height/doors_floor1_yaxis, width/door_width, height/door_height, door_curve);
+  
+}

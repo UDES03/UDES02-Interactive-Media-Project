@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+"<html lang=""en"">"
+  <head>
+"    <meta charset=""utf-8"">"
+"    <meta http-equiv=""X-UA-Compatible"" content=""IE=edge"">"
+"    <meta name=""viewport"" content=""width=device-width"," initial-scale=1"">"
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+"    <meta name=""description"" content=""FEIT EIF Researcher Interface"">"
+"    <meta name=""author"" content=""Drew Edwards"">"
+"    <link rel=""icon"" href=""/media/img/favicon.ico"">"
+""
+    <title>FEIT EIF Researcher Interface</title>
+""
+    <!-- Bootstrap core CSS -->
+"    <link href=""/media/css/bootstrap.css"" rel=""stylesheet"">"
+""
+    <!-- Custom styles for this template -->
+"    <link href=""/media/css/navbar.css"" rel=""stylesheet"">"
+"    <link href=""/media/css/custom.css"" rel=""stylesheet"">"
+""
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+"      <script src=""https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js""></script>"
+"      <script src=""https://oss.maxcdn.com/respond/1.4.2/respond.min.js""></script>"
+    <![endif]-->
+  
+"                              <script>!function(a){var e=""https://s.go-mpulse.net/boomerang/""","t=""addEventListener"";if(""False""==""True"")a.BOOMR_config=a.BOOMR_config||{}",a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,"e=""https://s2.go-mpulse.net/boomerang/"";if(window.BOOMR_API_key=""NTMT6-K8CYT-FKPY4-QQQZ7-HCDSE""",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,"r=document.createElement(""iframe"");if(a[t])a[t](""load""",n,"!1);else if(a.attachEvent)a.attachEvent(""onload""","n);r.src=""javascript:void(0)""","r.title=""""","r.role=""presentation""","(r.frameElement||r).style.cssText=""width:0;height:0;border:0;display:none;""","o=document.getElementsByTagName(""script"")[0]",o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,"r.src=""javascript:var d=document.open();d.domain='""+i+""';void(0);""","_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement(""script"");if(i)this.domain=i;a.id=""boomr-if-as""","a.src=e+""NTMT6-K8CYT-FKPY4-QQQZ7-HCDSE""",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},"_.write(""<bo""+'dy onload=""document._l();"">')",_.close()}}(),""""".length>0)if(a&&""performance""in a&&a.performance&&""function""==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{}",BOOMR.plugins=BOOMR.plugins||{},"!BOOMR.plugins.AK){var e=""""==""true""?1:0","t=""""","n=""rimqipaxeac26yyrrcaa-f-b0cf2fb4d-clientnsv4-s.akamaihd.net""","i=""false""==""true""?2:1","_={""ak.v"":""32""","""ak.cp"":""1199950""","""ak.ai"":parseInt(""716855""",10),"""ak.ol"":""0""","""ak.cr"":8","""ak.ipv"":4","""ak.proto"":""http/1.1""","""ak.rid"":""215f2454""","""ak.r"":30132","""ak.a2"":e","""ak.m"":""dscb""","""ak.n"":""essl""","""ak.bpcip"":""138.25.4.0""","""ak.cport"":59597","""ak.gh"":""23.32.5.171""","""ak.quicv"":""""","""ak.tlsv"":""tls1.3""","""ak.0rtt"":""""","""ak.csrc"":""-""","""ak.acc"":""reno""","""ak.t"":""1662093440""","""ak.ak"":""hOBiQwZUYzCg5VSAfCLimQ==bjESCHowW7y90Zx3UL3n6JE0/oPtw+dbA48K3S+7JDlUVx/RiPI+BN6rVcQHm6NwI4WNKcpBsquh7sn6o7gPmMHlbTjb4YP74tH7AWLbp2JNSXpC5BPAGsZyKj9IIrmAYIWHzmyXv54WhIysEQTYVAADylhCxAVgdtA/rXd9BInHQ/UO/6ogTPcgCBl9ZzBGxjiaI4uHYEsYj0bYx4aA0KSY21fXrndFQxV9A7w/f9U8nOQF3zfau6OizQUgGh7w1u99hg9JhraGHCXsOdco2/dE+X1cwnqnFsGStJlsqWNqPDM2Z3O0gQyBiC6hO7yvnEp7fBHpE96LDY9vvFv8eslAaZFNIpF8v8/sVke52CKoVaFXsSdNDD6G38YnBqO0Ahk2Rf4AXw+Kwf43AIx1cw1WhJ1MrOUYItpn2JMFrkA=""","""ak.pv"":""4""","""ak.dpoabenc"":""""","""ak.tf"":i};if(""""!==t)_[""ak.ruds""]=t;var o={i:!1","av:function(e){var t=""http.initiator"";if(e&&(!e[t]||""spa_hard""===e[t]))_[""ak.feo""]=void 0!==a.aFeoApplied?1:0",BOOMR.addVar(_)},"rv:function(){var a=[""ak.bpcip""","""ak.cport""","""ak.cr""","""ak.csrc""","""ak.gh""","""ak.ipv""","""ak.m""","""ak.n""","""ak.ol""","""ak.proto""","""ak.quicv""","""ak.tlsv""","""ak.0rtt""","""ak.r""","""ak.acc""","""ak.t""","""ak.tf""];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_",akDNSPreFetchDomain:n,"init:function(){if(!o.i){var a=BOOMR.subscribe;a(""before_beacon""",o.av,null,null),"a(""onbeacon""",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+""
+  <body>
+""
+"    <div class=""container"">"
+""
+      <!-- Static navbar -->
+"      <nav class=""navbar navbar-default"">"
+"        <div class=""container-fluid"">"
+"          <div class=""navbar-header"">"
+"            <button type=""button"" class=""navbar-toggle collapsed"" data-toggle=""collapse"" data-target=""#navbar"" aria-expanded=""false"" aria-controls=""navbar"">"
+"              <span class=""sr-only"">Toggle navigation</span>"
+"              <span class=""icon-bar""></span>"
+"              <span class=""icon-bar""></span>"
+"              <span class=""icon-bar""></span>"
+            </button>
+"            <a class=""navbar-brand"" href=""/"">EIF Researcher Data</a>"
+          </div>
+"          <div id=""navbar"" class=""navbar-collapse collapse"">"
+"            <ul class=""nav navbar-nav"">"
+"              <li class=""active""><a href=""/"">Home</a></li>"
+              <li><a href='/graph/'>Graphing</a></li>
+              <li><a href='/api/'>API</a></li>
+              <li><a href='/map/'>Maps</a></li>
+              <li><a href='/feed/'>Camera Feed</a></li>
+"              <li class=""dropdown"">"
+"                <a href=""#"" class=""dropdown-toggle"" data-toggle=""dropdown"" role=""button"" aria-expanded=""false"">Links <span class=""caret""></span></a>"
+"                <ul class=""dropdown-menu"" role=""menu"">                "
+                  <li><a href='https://eif-wiki.feit.uts.edu.au'>EIF Wiki</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+"      <!-- Main component for a primary marketing message or call to action --><div class=""highlight"">"
+  <h2>Website API</h2>
+  <h3>Overview</h3>
+"  <p>The API provides static links to retrieve EIF sensor data directly in a variety of formats for your own applications. To jump right in and see various permutations of API calls you can visit the <a href = ""/graph"">graphing section</a>", generate a graph and then view the associated API Links. All formats output the datetime of reading, and the reading value.</p>
+  <h3>API Format</h3>
+  <p>The API format is https://eif-research.feit.uts.edu.au/<b>api</b>/<b>[format]</b>/<b>[vars]</b></p>
+  <p><ul>
+    <li><b>[format]</b>: Output format. Depending on the format these are printed directly to browser or have a file download header.</li>
+    <li><b>[vars]</b>: Sensor selection using standard URL query strings.</li>
+  </ul></p>
+  <h3>Format Codes</h3>
+  <p>Select your output format as follows</p>
+  <ul>
+    <li><b>csv</b>: Print data to browser in standard CSV format.</li>
+    <li><b>dl</b>: Download CSV file.</li>
+    <li><b>json</b>: Print data to browser in standard JSON format.</li>
+    <li><b>hc</b>: Print data to browser in JSON format with UTC timestamps (instead of human readable timestamps). This link can be used to plot on a secondary Y axis and compare different sensors on the graphing page.</li>
+    <li><b>png</b>: Download PNG Line Graph of Data.</li>
+  </ul>
+  <h3>Vars (URL Query String)</h3>
+"  <p>Use standard <a href=""https://en.wikipedia.org/wiki/Query_string"" target=""_blank"">URL query strings</a> to form your request. Precede query with a ? and delimit variables with &.</p>"
+  <ul>
+    <li><b>rFromDate</b>: Lower limit time range. In the following timestamp format: 2014-09-28T13:29:11 Keep in mind you may need to substitute the correct HTML character code in for the dash and colon depending on your implementation.</li>
+    <li><b>rToDate</b>: As above, upper limit time range.</li>
+"    <li><b>rFamily</b>: Family of sensors. Families include: ""wasp"""," ""embed"""," ""weather"""," ""logins"".</li>"
+    <li><b>rSensor</b>: Sensor code</li>
+    <li><b>rSubSensor</b>: Optional sub-sensor code</li>
+  </ul>
+</div>
+    </div> <!-- /container -->
+""
+""
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+"    <script src=""https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js""></script>"
+"    <script src=""/media/js/bootstrap.min.js""></script>"
+""
+  </body>
+</html>

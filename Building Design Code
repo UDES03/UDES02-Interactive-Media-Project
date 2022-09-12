@@ -1,0 +1,58 @@
+
+
+void setup()
+{
+
+  size(1000, 1000);
+  //color build = color(200);
+
+  building();
+  doors_floor0();
+  doors_floor1();
+}
+void building() /// Building Design/////////
+{
+
+
+  ///// Rectangle #1___floor 4////
+  //fill(build);
+  rect(width/4, height/6, width/4, height/12);
+
+  //// Rectangle #2 ____ floor 3//////
+  fill(0);
+  rect(width/4, height/4, width/4, height/12);
+
+  ////Rectangle  #3 _____ floor 2///////
+  fill(125);
+  rect(width/4, height/3, width/4, height/12);
+
+  //// Rectangle #4 ______ floor 1/////
+  fill(200);
+  rect(width/4, height/2.40, width/4, height/12);
+
+  /////Rectangle # 5 _____ floor 0/////
+  fill(50);
+  rect(width/4, height/2.0, width/4, height/12);
+}
+
+void doors_floor0()
+{
+  fill(255);
+  //////Door 1 on left ////
+  rect(width/4, height/1.92, width/27, height/16, 7);
+  //////Door in the middle  ////
+  rect(width/2.80, height/1.92, width/27, height/16, 7);
+  ///// Door 3 on the right////
+  rect(width/2.16, height/1.92, width/27, height/16, 7);
+}
+
+void doors_floor1()
+{
+  fill(255);
+  //////Door 1 on left ////
+  rect(width/3.30, height/2.30, width/27, height/16, 7);
+  
+  ///Door 2 on the right///
+  rect(width/2.50, height/2.30, width/27, height/16, 7);
+  
+}
